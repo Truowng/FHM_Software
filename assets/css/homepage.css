@@ -1,0 +1,41 @@
+/* START HEADER */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--header-height);
+  backdrop-filter: blur(20px);
+}
+
+header .container {
+  height: 100%;
+}
+
+header .header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+header .logo a {
+  font-family: "ClashDisplay-Semibold";
+  font-size: 25px;
+}
+
+header nav {
+  display: flex;
+  gap: 15px;
+}
+
+header nav .header-link {
+  font-size: 25px;
+  display: inline-block;
+  width: fit-content;
+  text-transform: uppercase;
+  transition: all ease 0.3s;
+}
+
+/* END HEADER */

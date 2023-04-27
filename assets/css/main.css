@@ -1,0 +1,46 @@
+@import "../fonts/Clash\ Display/Fonts/WEB/css/clash-display.css";
+
+:root {
+  --black: #000;
+  --white: #fff;
+  --white-smoke: #e7e1df;
+  --header-height: 100px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+body {
+  background-color: var(--white-smoke);
+  transition: background-color ease 0.3s;
+  font-family: "ClashDisplay-Regular";
+}
+
+.dark {
+  background-color: var(--black);
+}
+
+.dark * {
+  color: var(--white);
+}
+
+.dark svg,
+.dark path {
+  stroke: var(--white);
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 70px;
+  padding-right: 70px;
+  max-width: 1780px;
+}
