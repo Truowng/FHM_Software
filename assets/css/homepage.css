@@ -1,41 +1,218 @@
-/* START HEADER */
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
+/* START BANNER */
+#banner {
+  margin-top: var(--header-height);
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#banner .banner-img {
   width: 100%;
-  height: var(--header-height);
-  backdrop-filter: blur(20px);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -35%);
+  z-index: -1;
 }
 
-header .container {
+#banner .banner-img svg {
+  width: 100%;
+}
+
+#banner .container {
+  display: flex;
+  flex-direction: column;
   height: 100%;
+  justify-content: space-between;
 }
 
-header .header-wrapper {
+#banner .banner-slogan {
+  align-self: center;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  height: 100%;
+  justify-content: start;
+  gap: 10px;
+  transform: translateX(50%);
 }
 
-header .logo a {
-  font-family: "ClashDisplay-Semibold";
-  font-size: 25px;
-}
-
-header nav {
-  display: flex;
-  gap: 15px;
-}
-
-header nav .header-link {
-  font-size: 25px;
-  display: inline-block;
+#banner .banner-slogan .title {
   width: fit-content;
+  font-size: 300px;
   text-transform: uppercase;
-  transition: all ease 0.3s;
+  font-family: "ClashDisplay-Semibold";
+  cursor: default;
 }
 
-/* END HEADER */
+#banner .banner-slogan .list {
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  transform: translateY(-8px);
+}
+
+#banner .banner-slogan .list .item {
+  width: fit-content;
+  font-size: 60px;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: default;
+  margin-bottom: 0;
+  line-height: 1;
+}
+
+#banner .banner-quote {
+  align-self: start;
+  width: 50%;
+}
+
+#banner .banner-quote .title {
+  font-size: 100px;
+  font-weight: 600;
+}
+/* END BANNER */
+
+/* START ECOSYSTEM */
+#ecosystem {
+  margin-top: 200px;
+}
+
+#ecosystem .ecosystem-title {
+  width: 100%;
+  margin-bottom: 200px;
+}
+
+#ecosystem .ecosystem-title .title {
+  font-size: 100px;
+  text-transform: capitalize;
+  font-weight: 600;
+  width: 50%;
+  margin-left: auto;
+  border-top: 2px solid var(--black);
+  padding-top: 20px;
+  margin-bottom: 300px;
+}
+
+#ecosystem .ecosystem-title .desc {
+  font-size: 60px;
+}
+
+#ecosystem .ecosystem-img {
+  width: 100%;
+}
+
+#ecosystem .ecosystem-img svg {
+  width: 100%;
+}
+
+#ecosystem .ecosystem-img .circle {
+  transform-origin: center;
+}
+
+#ecosystem .ecosystem-content .desc {
+  font-size: 30px;
+}
+
+#ecosystem .ecosystem-content .list {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+#ecosystem .ecosystem-content .list .item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 300px;
+  max-width: 50%;
+}
+
+#ecosystem .ecosystem-content .list .item a {
+  text-transform: capitalize;
+  font-size: 30px;
+}
+
+#ecosystem .ecosystem-content .list .item .icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  transition: all cubic-bezier(0.77, 0, 0.175, 1) 0.75s;
+}
+#ecosystem .ecosystem-content .list .item .icon .horizontal-line,
+#ecosystem .ecosystem-content .list .item .icon .vertical-line {
+  background-color: var(--black);
+  height: 2px;
+  transition: transform cubic-bezier(0.77, 0, 0.175, 1) 0.75s,
+    background-color ease 0.3s;
+}
+
+#ecosystem .ecosystem-content .list .item .icon .horizontal-line {
+  width: 100%;
+}
+
+#ecosystem .ecosystem-content .list .item .icon .vertical-line:nth-child(1) {
+  transform: rotate(90deg) translateX(-45%);
+  width: calc(50% - 2px);
+}
+
+#ecosystem .ecosystem-content .list .item .icon .vertical-line:nth-child(3) {
+  transform: rotate(-90deg) translateX(-45%);
+  width: calc(50% - 2px);
+}
+
+#ecosystem
+  .ecosystem-content
+  .list
+  .item:hover
+  .icon
+  .vertical-line:nth-child(1) {
+  transform: rotate(225deg) translateX(-39%) translateY(17px);
+}
+#ecosystem
+  .ecosystem-content
+  .list
+  .item:hover
+  .icon
+  .vertical-line:nth-child(3) {
+  transform: rotate(-225deg) translateX(-39%) translateY(-17px);
+}
+
+/* END ECOSYSTEM */
+
+/* START TECHNOLOGY */
+#technology {
+  margin-top: 200px;
+}
+
+#technology .technology-title {
+  width: 100%;
+  margin-bottom: 200px;
+}
+
+#technology .technology-title .title {
+  font-size: 100px;
+  text-transform: capitalize;
+  font-weight: 600;
+  width: 50%;
+  border-top: 2px solid var(--black);
+  padding-top: 20px;
+  margin-bottom: 300px;
+  text-align: right;
+}
+
+#technology .technology-title .desc {
+  font-size: 60px;
+  text-align: right;
+}
+
+#technology .technology-img,
+#technology .technology-img svg {
+  width: 100%;
+}
+/* END TECHNOLOGY */

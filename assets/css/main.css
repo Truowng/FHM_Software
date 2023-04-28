@@ -18,10 +18,21 @@ a {
   color: var(--black);
 }
 
+a:hover {
+  color: var(--black);
+  text-decoration: none;
+}
+
+p {
+  margin-bottom: 0;
+}
+
 body {
   background-color: var(--white-smoke);
   transition: background-color ease 0.3s;
   font-family: "ClashDisplay-Regular";
+  overflow-x: hidden;
+  position: relative;
 }
 
 .dark {
@@ -30,17 +41,138 @@ body {
 
 .dark * {
   color: var(--white);
+  border-color: var(--white) !important;
+}
+
+.dark .line {
+  background-color: var(--white) !important;
 }
 
 .dark svg,
-.dark path {
+.dark path,
+.dark circle,
+.dark line {
   stroke: var(--white);
 }
 
+.dark .fill-white {
+  fill: var(--white);
+}
+.dark .line-black {
+  stroke: var(--black);
+}
+
+.dark .switch-button .line {
+  background-color: var(--white);
+}
+
+.dark .switch-button .switch {
+  top: 60%;
+  transform: rotate(180deg);
+  background-color: var(--white);
+}
+
+.switch-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 30px;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 99;
+}
+
+.switch-button .switch {
+  width: 80%;
+  height: 40%;
+  background-color: var(--black);
+  cursor: pointer;
+  position: absolute;
+  top: 0%;
+  transform: rotate(0);
+  transition: background-color ease 0.3s,
+    top cubic-bezier(0.77, 0, 0.175, 1) 0.75s,
+    transform cubic-bezier(0.77, 0, 0.175, 1) 0.75s;
+}
+
+.switch-button .line {
+  height: 100%;
+  width: 2px;
+  background-color: var(--black);
+}
+
 .container {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 70px;
-  padding-right: 70px;
   max-width: 1780px;
 }
+
+/* START KEYFRAMES */
+@keyframes galaxy-1 {
+  0% {
+    transform: translate(0);
+  }
+  50% {
+    transform: translate(4%, -10%);
+  }
+  50% {
+    transform: translate(-4%, 10%);
+  }
+}
+
+@keyframes galaxy-2 {
+  0% {
+    transform: translate(0);
+  }
+  50% {
+    transform: translate(8%, -20%);
+  }
+  50% {
+    transform: translate(-8%, 20%);
+  }
+}
+
+/* END KEYFRAMES */
+
+/* START HEADER */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--header-height);
+  backdrop-filter: blur(10px);
+  z-index: 99;
+}
+
+header .container {
+  height: 100%;
+}
+
+header .header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+header .logo a {
+  font-family: "ClashDisplay-Semibold";
+  font-size: 25px;
+}
+
+header nav {
+  display: flex;
+  gap: 15px;
+}
+
+header nav .header-link {
+  font-size: 25px;
+  display: inline-block;
+  width: fit-content;
+  text-transform: uppercase;
+  transition: all ease 0.3s;
+}
+
+/* END HEADER */

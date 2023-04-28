@@ -4,11 +4,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./assets/css/main.css" />
     <link rel="stylesheet" href="./assets/css/homepage.css" />
     <title>FHM Software</title>
   </head>
   <body class="">
+    <div class="switch-button">
+      <div class="switch" onclick="switchMode()"></div>
+      <div class="line"></div>
+    </div>
     <!-- START HEADER -->
     <header>
       <div class="container">
@@ -28,12 +38,237 @@
     </header>
     <!-- END HEADER -->
     <!-- START CONTENT -->
-    <main class="content"></main>
+    <main class="content">
+      <!-- START BANNER -->
+      <section id="banner">
+        <div class="banner-img">
+          <svg
+            class="line"
+            width="100%"
+            height="100%"
+            viewBox="0 0 1359 565"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              class="path-1"
+              d="M0.5 14C92 1.33332 301.1 -13.1 405.5 30.5C536 85 598.5 203 846 293.5C1044 365.9 1266.17 388 1358.5 389.5M0.5 185C53.8333 193.667 186.7 208.4 291.5 198C422.5 185 719.5 148 846 198C972.5 248 1112 409.5 1229 447.5C1322.6 477.9 1358.5 467.833 1358.5 464.5M0.5 97C112.333 67.5 387 21.7 591 74.5C846 140.5 982.73 383.936 1099.91 422.5C1178.91 448.5 1287 434 1358.5 422.5M0.5 50C66.6667 125.904 254.8 280.869 478 293.5C757 309.289 787 227 992.5 253.5C1156.9 274.7 1308.17 336.5 1358.5 365.5M0.5 138.5C22.5 123.796 104.6 103.21 257 138.5C447.5 182.612 530 272 668 319.5C806 367 1059.34 312.903 1091 307C1120.5 301.5 1251 283.5 1358.5 319.5"
+              stroke="#767676"
+            />
+            <path
+              class="path-2"
+              d="M1 1C97 8.21554 247.293 140.324 359 159.818C534.5 190.444 687 88.4838 934.5 186.835C1132.5 265.516 1263.17 467.37 1355.5 469M1 117.978C54.3333 127.396 192.2 102.503 297 91.2007C428 77.0729 578 96.79 704.5 151.128C831 205.466 943 336.416 1060 377.712C1153.6 410.75 1359 393.833 1359 390.21M1 159.818C124.5 197.854 272 107.11 493.5 223.94C624.434 293.002 680.5 310.334 934.5 278.818C1157.21 251.185 1317.5 317.402 1359 309.247M1 214.699C238.5 214.699 163.8 247.551 387 261.278C666 278.436 741 186.835 837.5 186.835C1003.26 186.835 1308.67 320.114 1359 351.63M1 65.2702C73 103.85 124.5 136.301 272 186.835C458.493 250.728 478 331.525 730.5 361.415C874.023 378.405 901.14 322.905 1014.5 317.402C1084 314.027 1172 328.265 1359 408.685"
+              stroke="#767676"
+            />
+          </svg>
+        </div>
+        <div class="container">
+          <div class="banner-slogan">
+            <h2 class="title">re</h2>
+            <div class="list">
+              <p class="item" data-value="BUILD.">build.</p>
+              <p class="item" data-value="CREATE.">create.</p>
+              <p class="item" data-value="DESIGN.">design.</p>
+            </div>
+          </div>
+          <div class="banner-quote">
+            <h2 class="title">We DON'T Just Build Website.</h2>
+          </div>
+        </div>
+      </section>
+      <!-- END BANNER -->
+
+      <!-- START ECOSYSTEM -->
+      <section id="ecosystem">
+        <div class="container">
+          <div class="ecosystem-title">
+            <h2 class="title" data-value="Ecosystem.">ecosystem.</h2>
+            <p class="desc">
+              We develop strategic approaches from a communications perspective
+              for corporate culture, innovation and transformation.
+            </p>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-12">
+              <div class="ecosystem-content">
+                <p class="desc">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s.
+                </p>
+                <div class="list">
+                  <div class="item">
+                    <a href="#">selling management</a>
+                    <div class="icon">
+                      <div class="vertical-line line"></div>
+                      <div class="horizontal-line line"></div>
+                      <div class="vertical-line line"></div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <a href="#">garage management</a>
+                    <div class="icon">
+                      <div class="vertical-line line"></div>
+                      <div class="horizontal-line line"></div>
+                      <div class="vertical-line line"></div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <a href="#">e - office</a>
+                    <div class="icon">
+                      <div class="vertical-line line"></div>
+                      <div class="horizontal-line line"></div>
+                      <div class="vertical-line line"></div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <a href="#">website CMS</a>
+                    <div class="icon">
+                      <div class="vertical-line line"></div>
+                      <div class="horizontal-line line"></div>
+                      <div class="vertical-line line"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-12">
+              <div class="ecosystem-img">
+                <svg
+                  width="871"
+                  height="597"
+                  viewBox="0 0 871 597"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle
+                    cx="434.806"
+                    cy="299"
+                    r="297"
+                    stroke="black"
+                    stroke-width="2"
+                  />
+                  <circle
+                    class="circle"
+                    cx="435.51"
+                    cy="299.001"
+                    r="194.969"
+                    stroke="black"
+                    stroke-width="2"
+                    stroke-dasharray="10 10"
+                  />
+                  <line
+                    x1="0.717203"
+                    y1="596.588"
+                    x2="869.737"
+                    y2="0.587634"
+                    stroke-width="2"
+                    stroke="black"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END ECOSYSTEM -->
+
+      <!-- START TECHNOLOGY -->
+      <section id="technology">
+        <div class="container">
+          <div class="technology-title">
+            <h2 class="title" data-value="Technology.">technology.</h2>
+            <p class="desc">
+              We develop strategic approaches from a communications perspective
+              for corporate culture, innovation and transformation.
+            </p>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-12">
+              <div class="technology-img">
+                <svg
+                  width="866"
+                  height="659"
+                  viewBox="0 0 866 659"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <line
+                    y1="-1.5"
+                    x2="211.729"
+                    y2="-1.5"
+                    transform="matrix(0.520558 -0.853827 -0.853827 -0.520558 262.413 595.746)"
+                    stroke="black"
+                    stroke-width="3"
+                  />
+                  <path
+                    d="M799.595 548.293C808.564 533.266 807.026 512.816 796.355 488.583C785.689 464.365 765.946 436.479 738.709 406.69C684.239 347.118 599.882 280.02 498.545 219.534C397.208 159.048 298.111 116.645 219.823 96.9769C180.676 87.1422 146.761 82.9996 120.382 85.1071C93.9876 87.2158 75.2582 95.5687 66.2889 110.596C57.3196 125.623 58.8571 146.073 69.5288 170.305C80.1941 194.524 99.9378 222.409 127.175 252.198C181.644 311.771 266.001 378.868 367.338 439.354C468.676 499.84 567.772 542.244 646.06 561.911C685.207 571.746 719.123 575.889 745.502 573.781C771.896 571.673 790.625 563.32 799.595 548.293Z"
+                    stroke="black"
+                  />
+                  <path
+                    class="technology-path-1"
+                    d="M770.056 529.843C778.237 516.026 776.764 497.26 766.884 475.036C757.01 452.828 738.785 427.278 713.668 400.001C663.438 345.453 585.727 284.088 492.437 228.851C399.147 173.613 307.976 134.981 235.995 117.167C200.002 108.26 168.836 104.565 144.615 106.586C120.379 108.608 103.217 116.34 95.0355 130.157C86.8543 143.974 88.3272 162.741 98.2075 184.964C108.081 207.172 126.307 232.722 151.424 259.999C201.653 314.547 279.364 375.912 372.654 431.15C465.944 486.387 557.116 525.019 629.096 542.833C665.089 551.74 696.255 555.435 720.476 553.414C744.712 551.392 761.875 543.66 770.056 529.843Z"
+                    stroke="black"
+                  />
+                  <path
+                    class="technology-path-2 fill-white"
+                    d="M730.69 506.784C737.959 494.605 736.722 478.014 728.05 458.322C719.384 438.644 703.339 415.98 681.197 391.763C636.917 343.335 568.337 288.786 485.949 239.611C403.561 190.435 322.998 155.963 259.356 139.974C227.532 131.979 199.968 128.613 178.534 130.326C157.085 132.039 141.895 138.825 134.626 151.004C127.356 163.183 128.593 179.774 137.265 199.466C145.931 219.144 161.977 241.809 184.119 266.025C228.398 314.453 296.978 369.002 379.366 418.178C461.754 467.354 542.317 501.826 605.959 517.814C637.784 525.809 665.348 529.175 686.781 527.463C708.23 525.749 723.42 518.963 730.69 506.784Z"
+                    fill="black"
+                    stroke="black"
+                  />
+                  <line
+                    y1="-1.5"
+                    x2="222.389"
+                    y2="-1.5"
+                    transform="matrix(0.520558 -0.853827 -0.853827 -0.520558 482.03 237.074)"
+                    stroke="black"
+                    stroke-width="3"
+                  />
+                  <line
+                    class="line-black"
+                    y1="-1.5"
+                    x2="80.9936"
+                    y2="-1.5"
+                    transform="matrix(0.520558 -0.853827 -0.853827 -0.520558 437.002 310.135)"
+                    stroke="white"
+                    stroke-width="3"
+                    stroke-dasharray="6 6"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-12"></div>
+          </div>
+        </div>
+      </section>
+      <!-- END TECHNOLOGY -->
+    </main>
     <!-- END CONTENT -->
 
     <!-- START FOOTER -->
     <footer></footer>
     <!-- END FOOTER -->
+    <!-- LIB -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
     <script src="./assets/js/anime.min.js"></script>
+
+    <!-- SCRIPT -->
+    <script src="./assets/js/animateSVG.js"></script>
+    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/hackerEffect.js"></script>
   </body>
 </html>
