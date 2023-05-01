@@ -1,4 +1,5 @@
-const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()_+~|,.?/{}[]-";
+const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()_+~|,.?/{}[]-123456789";
+console.log(letters.split("").length);
 
 const bannerItemTexts = document.querySelectorAll(
   "#banner .banner-slogan .list .item"
@@ -19,7 +20,7 @@ const hackerEffect = (el) => {
         if (index < iterations) {
           return el.dataset.value[index];
         }
-        return letters[Math.floor(Math.random() * 49)];
+        return letters[Math.floor(Math.random() * letters.split("").length)];
       })
       .join("");
     if (iterations >= el.dataset.value.length) {
